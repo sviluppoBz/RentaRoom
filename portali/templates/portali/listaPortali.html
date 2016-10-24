@@ -1,0 +1,9 @@
+{% extends	'portali/base.html'	%}
+{% block content	%}
+	{%	for	portale	in	Portales	%}
+		<div	class="portale">
+			<h1><a	href="{%	url	'ilPortale'	pk=portale.pk	%}">{{	portale.codice	}}</a></h1>
+			<p>{{	portale.descri	}}</p>
+		</div>
+	{%	endfor	%}
+{% endblock content	%}

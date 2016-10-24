@@ -1,0 +1,10 @@
+{% extends 'portali/base.html' %}
+
+{% block content %}
+	<div class="portale">
+		<a class="btn btn-default" href="{%	url	'modiPortale'	pk=portale.pk	%}"><span class="glyphicon glyphicon-pencil"></span></a>
+		<h1>{{	portale.codice	}}</h1>
+		<p>{{	portale.descri	}}</p>
+		<p>{{	portale.contratto	}}</p>
+	</div>
+{%	endblock	%}
